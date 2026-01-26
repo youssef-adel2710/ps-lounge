@@ -12,15 +12,42 @@ const PSLoungeManager = () => {
     const [customAlertSound, setCustomAlertSound] = useState(null);
     const audioRef = useRef(null);
 
-    const ADMIN_PASSWORD = 'admin123';
-    const MANAGER_PASSWORD = 'manager456';
+    const ADMIN_PASSWORD = '86857881';
+    const MANAGER_PASSWORD = 'mk86857881';
 
     const [prices, setPrices] = useState({ singlePlayer: 30, multiPlayer: 45 });
     const [drinks, setDrinks] = useState([
-        { id: 1, name: 'Coca Cola', price: 10 },
-        { id: 2, name: 'Pepsi', price: 10 },
-        { id: 3, name: 'Water', price: 5 },
-        { id: 4, name: 'Energy Drink', price: 20 }
+
+
+        { id: 1, name: 'اندومي كبير', price: 15 },
+        { id: 2, name: 'اندومي صغير', price: 10 },
+        { id: 3, name: 'بسكويت معمول', price: 15 },
+        { id: 4, name: 'بسكويت بلبن', price: 15 },
+
+        //-------------------------------------------------//
+
+        { id: 5, name: 'بيبسي', price: 20 },
+        { id: 6, name: 'فيوري', price: 20 },
+        { id: 7, name: 'استنج', price: 20 },
+        { id: 8, name: 'تويست', price: 20 },
+        { id: 9, name: 'سبرايت', price: 20 },
+        { id: 10, name: 'فانتا', price: 20 },
+        { id: 11, name: 'شويبس', price: 20 },
+        { id: 12, name: 'فيروز', price: 20 },
+        { id: 13, name: 'مايه صغيرة', price: 5 },
+
+        //-------------------------------------------------//
+
+        { id: 14, name: 'شاي', price: 10 },
+        { id: 15, name: 'قهوة تركي', price: 15 },
+        { id: 16, name: 'قهوة فرنساوي', price: 25 },
+        { id: 17, name: 'كوفي بريك', price: 15 },
+        { id: 18, name: 'كوفي ميكس', price: 15 },
+        { id: 19, name: 'نسكافية', price: 15 },
+        { id: 20, name: 'ينسون', price: 10 },
+        { id: 21, name: 'شاي نعناع', price: 10 },
+        { id: 22, name: 'قرفة بالزنجبيل', price: 10 },
+
     ]);
     const [playStations, setPlayStations] = useState([
         { id: 1, name: 'PS1', status: 'idle', session: null, totalTimeToday: 0 },
@@ -408,6 +435,7 @@ const PSLoungeManager = () => {
 
     <
     div className = "mb-8" >
+
         <
         h2 className = "text-2xl font-bold text-gray-800 mb-4" > PlayStation Consoles < /h2> <
     div className = "grid grid-cols-1 md:grid-cols-2 gap-6" > {
@@ -468,7 +496,7 @@ const PSLoungeManager = () => {
                 }
                 className = "p-6 bg-gradient-to-br from-orange-400 to-pink-500 text-white rounded-xl hover:from-orange-500 hover:to-pink-600 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl" >
                 <
-                p className = "font-bold text-lg mb-2" > 🥤{ drink.name } < /p> <
+                p className = "font-bold text-lg mb-2" > { drink.name } < /p> <
                 p className = "text-2xl font-bold" > { drink.price }
                 EGP < /p> < /
                 button >
@@ -730,7 +758,7 @@ return ( <
                     }` } >
             <
             h4 className = "font-bold text-lg mb-2" > Single Player < /h4> <
-            p className = "text-gray-600" > 1 Controller < /p> <
+            p className = "text-gray-600" > 1 or 2 Controller < /p> <
             p className = "text-2xl font-bold text-blue-600 mt-3" > { prices.singlePlayer }
             EGP / hr < /p> < /
             button > <
@@ -1096,7 +1124,7 @@ const TotalsPage = ({ dailyRevenue, drinksSoldToday, playStations, standaloneDri
     <
     div className = "bg-white rounded-lg shadow-lg p-8" >
     <
-    h2 className = "text-2xl font-bold mb-6 text-gray-800" > 🥤Drinks Sold Today < /h2> <
+    h2 className = "text-2xl font-bold mb-6 text-gray-800" > Drinks Sold Today < /h2> <
     div className = "space-y-4" > {
         Object.keys(drinksSoldToday).length > 0 ? ( <
             >
