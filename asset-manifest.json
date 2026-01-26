@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ps-lounge/static/css/main.5086c6d1.css",
+    "main.js": "/ps-lounge/static/js/main.e920e729.js",
+    "static/js/453.df19e49c.chunk.js": "/ps-lounge/static/js/453.df19e49c.chunk.js",
+    "index.html": "/ps-lounge/index.html",
+    "main.5086c6d1.css.map": "/ps-lounge/static/css/main.5086c6d1.css.map",
+    "main.e920e729.js.map": "/ps-lounge/static/js/main.e920e729.js.map",
+    "453.df19e49c.chunk.js.map": "/ps-lounge/static/js/453.df19e49c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5086c6d1.css",
+    "static/js/main.e920e729.js"
+  ]
+}
